@@ -73,18 +73,4 @@ public class Account {
                 ']';
     }
 
-//    public String Acount(String acount) throws Exception {
-//
-//        String regex = "\\d{10}";
-//        Pattern pattern = Pattern.compile(regex);
-//
-//        Matcher matcher = pattern.matcher(acount);
-//        if(matcher.matches()) {
-//            System.out.println("acount OK");
-//        } else {
-//            throw new Exception("acount must is correct format");
-//        }
-//
-//        return acount;
-//    }
 }
