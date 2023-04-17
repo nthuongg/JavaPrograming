@@ -14,7 +14,7 @@ public class Account {
         System.out.println("Enter customer code");
         while (true) {
             String customerCode = scanner.nextLine();
-            if (customerName.length() == 5) {
+            if (customerCode.length() == 5) {
                 this.customerCode = customerCode;
                 break;
             } else {
@@ -22,7 +22,7 @@ public class Account {
             }
         }
         System.out.println("Enter customer name");
-        String customerName = scanner.nextLine();
+        customerName = scanner.nextLine();
         System.out.println("Enter acc number (positive number with 6 digits and starts with ‘100’)");
         while (true) {
             String accNumStr = scanner.nextLine();
