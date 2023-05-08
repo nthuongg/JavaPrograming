@@ -18,7 +18,7 @@ public class Account {
                 this.customerCode = customerCode;
                 break;
             } else {
-                System.out.println("Customer code must be 5 characters long.");
+                System.out.println("Customer code must be 5 characters long: ");
             }
         }
         System.out.println("Enter customer name");
