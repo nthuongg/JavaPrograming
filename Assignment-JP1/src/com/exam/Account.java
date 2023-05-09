@@ -1,5 +1,4 @@
-package com.Exam;
-
+package com.exam;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
