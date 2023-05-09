@@ -1,4 +1,4 @@
-package Class6;
+package com.Class6;
 
 public class MainClass {
     public static void main(String[] args) {

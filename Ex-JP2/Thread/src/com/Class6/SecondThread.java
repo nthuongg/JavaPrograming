@@ -1,4 +1,4 @@
-package Class6;
+package com.Class6;
 
 public class SecondThread extends Thread {
     @Override

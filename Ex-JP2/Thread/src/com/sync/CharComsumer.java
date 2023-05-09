@@ -1,11 +1,9 @@
-package sync;
+package com.sync;
 
-import java.util.Random;
-
-public class CharProvider extends Thread {
+public class CharComsumer extends Thread {
     CharObject charObject;
 
-    public CharProvider(CharObject c) {
+    public CharComsumer(CharObject c) {
         this.charObject = c;
     }
 
@@ -13,23 +11,18 @@ public class CharProvider extends Thread {
     public void run() {
         //Create random Char
         while(true) {
-
             try {
-                //synchronized Shared Resource
                 synchronized (this.charObject) {
-                    if(charObject.isFree) {
+                    if(!charObject.isFree) {
                         charObject.wait();
                     }
 
-                    Random random = new Random();
-                    int nRan = random.nextInt(26);
-                    char ch = (char) (nRan + 97);
+                    String str = ""+ this.charObject.ch; //Shared Resource
+                    str = str.toUpperCase();
 
-                    this.charObject.ch = ch;
-                    System.out.println( this.charObject.ch);
+                    System.out.println("--------Comsumer: " + str);
 
-                    //notify to other Thread
-                    charObject.isFree = true;
+                    charObject.isFree = false;
                     charObject.notify();
                     pause();
                 }
@@ -37,6 +30,7 @@ public class CharProvider extends Thread {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
+
         }
     }
 
@@ -46,4 +40,5 @@ public class CharProvider extends Thread {
         } catch (Exception e) {
         }
     }
+
 }

@@ -1,4 +1,4 @@
-package sync;
+package com.sync;
 
 public class MainClass {
     public static void main(String[] args) {
