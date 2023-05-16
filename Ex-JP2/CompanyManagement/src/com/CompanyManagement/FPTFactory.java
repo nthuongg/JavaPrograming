@@ -7,7 +7,7 @@ public class FPTFactory extends AbstractFactory {
         if(personType == null) {
             return null;
         }
-        if (personType.equalsIgnoreCase("DIRECTORY")) {
+        if (personType.equalsIgnoreCase("DIRECTOR")) {
             return new FPTDirector();
 
         } else if (personType.equalsIgnoreCase("MANAGER")) {

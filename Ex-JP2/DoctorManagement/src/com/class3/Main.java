@@ -1,5 +1,7 @@
 package com.class3;
 
+import javax.imageio.stream.FileImageOutputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
