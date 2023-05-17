@@ -1,0 +1,2 @@
+2023-05-17 09:01:06 INFO  Main:13 - This is info : User login in
+2023-05-17 09:01:06 WARN  Main:16 - This is warn : Connect DB timeout
