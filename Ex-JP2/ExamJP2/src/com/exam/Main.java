@@ -30,7 +30,7 @@ public class Main {
 
                     case 2 -> {
                         scanner.nextLine(); // Consume newline
-                        System.out.print("Enter the name to search: ");
+                        System.out.print("Enter the name to find: ");
                         String findName = scanner.nextLine();
                         controller.findContactByName(findName);
                     }
